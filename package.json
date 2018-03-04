@@ -5,5 +5,9 @@
   "main": "index.js",
   "author": "jamsinclair <jamsinclairnz@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "autoprefixer": "^8.1.0",
+    "postcss-cli": "^5.0.0"
+  }
 }
