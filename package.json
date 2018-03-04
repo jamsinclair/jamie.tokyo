@@ -1,0 +1,9 @@
+{
+  "name": "jamie.tokyo",
+  "version": "1.0.0",
+  "description": "Portfolio website for use while living in Japan",
+  "main": "index.js",
+  "author": "jamsinclair <jamsinclairnz@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
