@@ -2,7 +2,9 @@
   "name": "jamie.tokyo",
   "version": "1.0.0",
   "description": "Portfolio website for use while living in Japan",
-  "main": "index.js",
+  "scripts": {
+    "css": "postcss main.css --use autoprefixer -o main.prod.css"
+  },
   "author": "jamsinclair <jamsinclairnz@gmail.com>",
   "license": "MIT",
   "private": true,
