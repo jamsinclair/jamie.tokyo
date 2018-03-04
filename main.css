@@ -43,7 +43,8 @@ li a:visited {
   color: inherit;
 }
 
-li a:hover {
+li a:hover,
+li a:active {
   color: #22b8cf;
 }
 
@@ -65,4 +66,3 @@ a:hover .item-text--on-hover {
   height: 18px;
   width: 100%;
 }
-
