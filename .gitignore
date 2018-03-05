@@ -1,3 +1,4 @@
 node_modules/
 .vscode
 main.prefixed.css
+main.css
