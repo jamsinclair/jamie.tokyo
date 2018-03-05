@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Portfolio website for use while living in Japan",
   "scripts": {
+    "sass": "node-sass main.scss main.css",
     "css": "postcss main.css --use autoprefixer -o main.prefixed.css",
     "compress": "cleancss main.prefixed.css -o main.min.css",
     "build": "yarn run css && yarn run compress"
@@ -13,6 +14,7 @@
   "dependencies": {
     "autoprefixer": "^8.1.0",
     "clean-css-cli": "^4.1.11",
+    "node-sass": "^4.7.2",
     "postcss-cli": "^5.0.0"
   }
 }
