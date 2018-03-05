@@ -57,6 +57,10 @@ li a:active {
   display: none;
 }
 
+.item-text--lets-talk {
+  padding-bottom: 40px;
+}
+
 a:hover .item-text {
   display: none;
 }
