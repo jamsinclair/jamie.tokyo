@@ -1,0 +1,54 @@
+@import "./node_modules/normalize.css/normalize";
+@import "./node_modules/tachyons/css/tachyons";
+
+.mw75 {
+  max-width: 50rem;
+}
+
+// Border Overrides
+.btn {
+  border-top-width: 0;
+}
+
+.brn {
+  border-right-width: 0;
+}
+
+.bbn {
+  border-bottom-width: 0;
+}
+
+.bln {
+  border-left-width: 0;
+}
+
+// Overrides for printable resume
+@media print {
+  html {
+    font-size: 14px;
+  }
+
+  .lh-copy {
+    line-height: 1.3;
+  }
+
+  h1.mt4 {
+    margin-top: 0;
+  }
+
+  .bb {
+    border-bottom-width: .125rem;
+  }
+
+  .w-50-l {
+    width: 50%;
+  }
+
+  .pr3-l {
+    padding-right: 1rem;
+  }
+
+  .pl3-l {
+    padding-left: 1rem;
+  }
+}
