@@ -6,7 +6,7 @@
     "sass": "node-sass main.scss main.css",
     "css": "postcss main.css --use autoprefixer -o main.prefixed.css",
     "compress": "cleancss main.prefixed.css -o main.min.css",
-    "build": "yarn run css && yarn run compress"
+    "build": "yarn run sass && yarn run css && yarn run compress"
   },
   "author": "jamsinclair <jamsinclairnz@gmail.com>",
   "license": "MIT",
