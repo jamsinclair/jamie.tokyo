@@ -7539,6 +7539,8 @@ code, .code {
 @media print {
   html {
     font-size: 14px; }
+  .back-link {
+    display: none; }
   .lh-copy {
     line-height: 1.3; }
   h1.mt4 {
