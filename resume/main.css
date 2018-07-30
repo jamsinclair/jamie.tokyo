@@ -7538,7 +7538,7 @@ code, .code {
 
 @media print {
   html {
-    font-size: 14px; }
+    font-size: 80%; }
   .back-link {
     display: none; }
   .lh-copy {
