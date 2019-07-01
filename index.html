@@ -7,7 +7,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jamie | Tokyo | Dev</title>
   <link rel="icon" type="image/png" href="./favicon.png">
-  <link rel="stylesheet" href="main.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49892729-7"></script>
   <script>
@@ -16,45 +17,42 @@
     gtag('js', new Date());
     gtag('config', 'UA-49892729-7');
   </script>
-  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 </head>
-<body class="landing">
+<body>
   <main>
-    <div class="wrapper">
-      <h1>東京のジェイミー</h1>
-      <h2>ソフトウェアエンジニア</h2>
-      <ul>
-        <li>
-          <a href="/resume">
-            <i class="fas fa-file-alt"></i>
-            <span class="item-text">履歴書</span>
-            <span class="item-text--on-hover">Résumé</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/jamsinclair">
-            <i class="fab fa-github-square"></i>
-            GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/jamsinclair">
-            <i class="fab fa-linkedin"></i>
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://line.me/ti/p/VxbWooz6OX">
-            <i class="fab fa-line"></i>
-            <span class="item-text">話しましょう！</span>
-            <span class="item-text--on-hover item-text--lets-talk">Let’s Talk!</span>
-          </a>
-        </li>
-      </ul>
-    </div>
+    <h1>
+      <span class="jamie">Jamie</span>
+      <span class="tower">🗼</span>
+      <span class="tokyo">Tokyo</span>
+    </h1>
+    <h2>Tokyo based software developer &amp;&nbsp;humourist</h2>
+    <ul>
+      <li>
+        <a href="/resume">Resume</a>
+      </li>
+      <li>
+        <a href="https://github.com/jamsinclair">Code</a>
+      </li>
+      <li>
+        <a href="https://linkedin.com">Linkedin</a>
+      </li>
+    </ul>
   </main>
   <script>
-    !function(){var e=window,n=document,t=e.location.search.match(/c=([a-z]+n)/),r="https://ly.jamsinclair.nz?jkey=jpgjpl&rf="+n.referrer+"&c="+(t?t[1]:"")+"&res="+(e.outerWidth||e.innerWidth)+"x"+(e.outerHeight||e.innerHeight),a=e.navigator;if(a.sendBeacon)a.sendBeacon(r);else{var i=new XMLHttpRequest;i.open("POST",r,!1),i.setRequestHeader("Content-Type","text/plain;charset=UTF-8"),i.send()}}();
+    (function () {
+      const shuffleStore = {};
+      const shuffleTextLoop = (selector, text1, text2, node) => {
+        node = node || document.querySelector(selector);
+        shuffleStore[selector] = !shuffleStore[selector];
+        node.innerHTML = shuffleStore[selector] ? text1 : text2;
+        setTimeout(() => {
+          shuffleTextLoop(selector, text1, text2, node);
+        }, (((Math.random() * 4) + 1) * 1000));
+      };
+      shuffleTextLoop('.jamie', 'Jamie', 'ジェイミー');
+      shuffleTextLoop('.tokyo', 'Tokyo', 'とうきょう');
+    })();
+    // !function(){var e=window,n=document,t=e.location.search.match(/c=([a-z]+n)/),r="https://ly.jamsinclair.nz?jkey=jpgjpl&rf="+n.referrer+"&c="+(t?t[1]:"")+"&res="+(e.outerWidth||e.innerWidth)+"x"+(e.outerHeight||e.innerHeight),a=e.navigator;if(a.sendBeacon)a.sendBeacon(r);else{var i=new XMLHttpRequest;i.open("POST",r,!1),i.setRequestHeader("Content-Type","text/plain;charset=UTF-8"),i.send()}}();
   </script>
 </body>
 </html>
