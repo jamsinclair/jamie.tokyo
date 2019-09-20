@@ -153,7 +153,7 @@
     <a class="back-link" href="/">← Back to jamie.tokyo</a>
   </footer>
   <script>
-    !function(){var e=window,n=document,t=e.location.search.match(/c=([a-z]+n)/),r="https://ly.jamsinclair.nz?jkey=jpgjpl&rf="+n.referrer+"&c="+(t?t[1]:"")+"&res="+(e.outerWidth||e.innerWidth)+"x"+(e.outerHeight||e.innerHeight),a=e.navigator;if(a.sendBeacon)a.sendBeacon(r);else{var i=new XMLHttpRequest;i.open("POST",r,!1),i.setRequestHeader("Content-Type","text/plain;charset=UTF-8"),i.send()}}();
+    !function(){var e=window,n=document,t=e.location.search.match(/c=([a-z]+n)/),r="https://ly.jamsinclair.nz/.netlify/functions/j?jkey=jpgjpl&rf="+n.referrer+"&c="+(t?t[1]:"")+"&res="+(e.outerWidth||e.innerWidth)+"x"+(e.outerHeight||e.innerHeight),i=e.navigator;if(i.sendBeacon)i.sendBeacon(r);else{var a=new XMLHttpRequest;a.open("POST",r,!1),a.setRequestHeader("Content-Type","text/plain;charset=UTF-8"),a.send()}}();
     function supportsEmoji () {
       var ctx = document.createElement("canvas").getContext("2d");
       ctx.fillText("🇯🇵", -2, 4);
