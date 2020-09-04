@@ -14,7 +14,7 @@
   "dependencies": {
     "autoprefixer": "^8.1.0",
     "clean-css-cli": "^4.1.11",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "postcss-cli": "^5.0.0"
   }
 }
